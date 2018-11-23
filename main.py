@@ -40,5 +40,7 @@ if __name__ == "__main__":
     # score = accuracy_score(y_test,y_pred)
     # print(score)
     # rfr_cv.fit(x_train,y_train);
-    print(y_pred)
+    with open('result.txt', 'w') as f:
+        for y in y_pred:
+            f.write(str(y) + '\n')
     print('ok')
